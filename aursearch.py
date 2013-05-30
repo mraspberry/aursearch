@@ -69,10 +69,10 @@ def process_results(resultobj,pkgname):
         print("    Version:",res['Version'])
         print("    Maintainer:",res['Maintainer'])
         print("    ID:", res['ID'])
-        print("    Out of Date: {0}",res['OutOfDate'])
+        print("    Out of Date:",res['OutOfDate'])
         print("    License:",res['License'])
         print("    URL:",aurbase + res['URLPath'])
-        print("    Description: {0}",res['Description'])
+        print("    Description:",res['Description'])
     lock.release()
 
 def main(args):
