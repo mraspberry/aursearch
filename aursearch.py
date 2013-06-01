@@ -73,6 +73,7 @@ def process_results(resultobj,pkgname):
         print("    License:",res['License'])
         print("    URL:",aurbase + res['URLPath'])
         print("    Description:",res['Description'])
+        sys.stdout.write('\n')
     lock.release()
 
 def main(args):
