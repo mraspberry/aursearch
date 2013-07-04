@@ -42,6 +42,6 @@ nosetests.xml
 # ignore the source tarballs created by makepkg --source
 pkg
 src
-aursearch_*.zip
+aursearch*.tar.gz
 *.tar.xz
 *.src.tar.*
