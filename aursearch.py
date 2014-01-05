@@ -35,7 +35,7 @@ except ImportError:
     print("This script requires the requests library (http://docs.python-requests.org/en/latest/)",file=sys.stderr)
     sys.exit()
 
-__version__='1.1'
+__version__='1.1.1'
 
 global aurbase # just want to be clear what the intention is by declaring these here
 global lock
@@ -65,14 +65,14 @@ def process_results(resultobj,pkgname):
     lock.acquire()
     print("Found",json['resultcount'],"results for",pkgname)
     for res in json['results']:
-        print("    Name:",res['Name'])
-        print("    Version:",res['Version'])
-        print("    Maintainer:",res['Maintainer'])
-        print("    ID:", res['ID'])
-        print("    Out of Date:",res['OutOfDate'])
-        print("    License:",res['License'])
-        print("    URL:",aurbase + res['URLPath'])
-        print("    Description:",res['Description'])
+        print("    Name: {0}".format(res['Name']))
+        print("    Version: {0}".format(res['Version']))
+        print("    Maintainer: {0}".format(res['Maintainer']))
+        print("    ID: {0}".format(res['ID']))
+        print("    Out of Date: {0}".format(res['OutOfDate']))
+        print("    License: {0}".format(res['License']))
+        print("    URL: {0}".format(aurbase + res['URLPath']))
+        print("    Description: {0}".format(res['Description']))
         sys.stdout.write('\n')
     lock.release()
 
