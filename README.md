@@ -1,7 +1,7 @@
 aursearch
 ======
 
-Searches the Arch Linux AUR for a given package and prints out all results that match the package name provided
+Searches the Arch Linux AUR for a given package and prints out all results that match the package name provided. This application has been deprecated. You should instead use https://github.com/nixalot/aurtools 
 
 Usage information:
 ------------------
